@@ -18,7 +18,7 @@ const inputEl = document.getElementById("message-input");
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": "Bearer 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"
+          "Authorization": "Bearer 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"
         },
         body: JSON.stringify({
           prompt: userMessage,
@@ -30,6 +30,7 @@ const inputEl = document.getElementById("message-input");
       })
       .then(response => response.json())
       .then(data => {
+        
         const chatbotMessage = data.choices[0].text;
         
         // Add the chatbot's message to the chat history
