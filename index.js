@@ -18,7 +18,7 @@ const inputEl = document.getElementById("message-input");
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": "Bearer "+ process.env.API_KEY
+          "Authorization": "Bearer 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"
         },
         body: JSON.stringify({
           prompt: userMessage,
